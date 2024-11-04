@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening in de Lente</title>
+    <style>
+        /* Import Google Font Mulish */
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;800&display=swap');
+        
+        /* Basisstijl voor body en centreren van de inhoud */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Mulish', sans-serif;
+            background-color: #fade9c;
+            color: #082159;
+            text-align: center;
+        }
+
+        /* Stijl voor het logo */
+        .logo {
+            width: 100%;
+            max-width: 550px; /* Maximale breedte op grotere schermen */
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        /* Stijl voor de hoofdtekst */
+        h1 {
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: 800; /* Gebruik Mulish Black */
+        }
+
+        /* Stijl voor de subtiteltekst */
+        .subtitle {
+            font-size: 1em;
+            font-weight: 300; /* Mulish Light */
+            margin-bottom: 10px;
+        }
+
+        /* Stijl voor het inschrijfformulier */
+        .email-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Ruimte tussen invoerveld en knop */
+        }
+
+        .email-form input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #082159;
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        .email-form button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #082159;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .email-form button:hover {
+            background-color: #051b3f; /* Donkerdere kleur bij hover */
+        }
+
+        /* Media query voor kleinere schermen */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            .email-form input[type="email"] {
+                width: 200px;
+            }
+
+            /* Extra marge rond het logo op kleine schermen */
+            .logo {
+                margin: 20px; /* Geeft rondom marge aan het logo */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="AMPERE_LOGO_BLAUW.svg" alt="Ampere Logo" class="logo">
+    
+    <!-- Hoofdtekst -->
+    <h1>We gaan open bij het begin van de lente!</h1>
+    
+    <!-- Subtitel en formulier -->
+    <div class="subtitle">Wil je het als eerste weten, laat je e-mail adres achter</div>
+    <form class="email-form">
+        <input type="email" placeholder="Jouw e-mailadres" required>
+        <button type="submit">Schrijf in</button>
+    </form>
+</body>
+</html>
