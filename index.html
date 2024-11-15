@@ -76,9 +76,22 @@
               width: 37px; /* Grootte van de iconen */
             height: 37px;
         }
+        /* Locatie-icoon */
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Ruimte tussen icoon en tekst */
+        }
+
+        .location svg {
+            width: 20px; /* Grootte van het locatie-icoon */
+            height: 20px;
+             /* Kleur van het icoon */
+        }
+
 /* this will work */
 svg path {
-  fill: blue;
+  fill: #082159;
 }
         /* Media query voor kleinere schermen */
         @media (max-width: 600px) {
@@ -97,7 +110,6 @@ svg path {
     <!-- Logo -->
     <img src="AMPERE_LOGO_BLAUW.svg" alt="Ampere Logo" class="logo">
 
-
     <!-- Subtitel en formulier -->
     <div class="subtitle">We gaan open bij het <strong>begin van de lente!</strong><br>Wil je het als eerste weten, volg ons.</div>
    <!-- Social media iconen -->
@@ -112,6 +124,19 @@ svg path {
             <img src="facebook-icon.svg" alt="Facebook">
         </a>
     </div>
-     <div class="subtitle"> <br> <em><a href="https://www.google.be/maps/place/Bloemendalestraat+24,+8730+Beernem/@51.142141,3.3375352,17z/data=!3m1!4b1!4m6!3m5!1s0x47c35b4ff68dd173:0x358ec9ddac7a60df!8m2!3d51.1421377!4d3.3401155!16s%2Fg%2F11csd64pzl?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D">Bloemendalestraat 24, Beernem</a></em></div>
+
+   <!-- Adres met locatie-icoon -->
+    <div class="subtitle">
+        <br>
+        <em>
+            <span class="location">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+                </svg>
+                <a href="https://www.google.be/maps/place/Bloemendalestraat+24,+8730+Beernem/@51.142141,3.3375352,17z/data=!3m1!4b1!4m6!3m5!1s0x47c35b4ff68dd173:0x358ec9ddac7a60df!8m2!3d51.1421377!4d3.3401155!16s%2Fg%2F11csd64pzl?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D">Bloemendalestraat 24, Beernem</a>
+            </span>
+        </em>
+    </div>
+
 </body>
 </html>
